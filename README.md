@@ -1,11 +1,7 @@
 # 🦟 Malaria Cell Detection & Classification
 ### Deep Learning Pipeline — CNN → 7-Class Multiclass Classification
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.x-green)
-![Platform](https://img.shields.io/badge/Platform-Kaggle-20BEFF)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+
 
 ---
 
@@ -45,7 +41,7 @@ malaria-detection/
 
 ---
 
-## 📦 Datasets Used
+##  Datasets Used
 
 ### Dataset 1 — NIH Malaria Cell Images
 - **Source:** [Kaggle — iarunava/cell-images-for-detecting-malaria](https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria)
@@ -74,7 +70,7 @@ malaria-detection/
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 ### Phase 1 — Custom CNN (Binary Classification)
 ```
@@ -105,7 +101,7 @@ Bounding Box JSON Annotations
 
 ---
 
-## 🛠️ Tools & Libraries
+##  Tools & Libraries
 
 | Tool | Purpose |
 |------|---------|
@@ -122,7 +118,7 @@ Bounding Box JSON Annotations
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ### Step 1 — Add Datasets on Kaggle
 Add both datasets to your Kaggle notebook via **+ Add Input**:
@@ -150,7 +146,7 @@ for dirname, dirs, files in os.walk('/kaggle/input'):
 
 ---
 
-## 📊 Results
+##  Results
 
 | Model | Task | Accuracy |
 |-------|------|----------|
@@ -167,7 +163,7 @@ for dirname, dirs, files in os.walk('/kaggle/input'):
 
 ---
 
-## 🔍 How the Model Identifies Malaria
+##  How the Model Identifies Malaria
 
 Just like a doctor examines a blood slide under a microscope to identify which stage of malaria a patient has — this model does the same automatically:
 
@@ -192,7 +188,7 @@ Output: "Ring stage — 94% confidence"
 
 ---
 
-## 📈 Key Visualisations Generated
+##  Key Visualisations Generated
 
 | Plot | Description |
 |------|-------------|
@@ -205,7 +201,7 @@ Output: "Ring stage — 94% confidence"
 
 ---
 
-## 🚀 Future Scope
+##  Future Scope
 
 - **Transfer Learning** — Add EfficientNetB0 or VGG16 for better binary accuracy
 - **Mobile Deployment** — Convert model to TensorFlow Lite for field diagnosis
@@ -216,7 +212,7 @@ Output: "Ring stage — 94% confidence"
 
 ---
 
-## 👩‍💻 Project Info
+##  Project Info
 
 - **Type:** B.Tech Python Project
 - **Domain:** Medical Image Analysis / Deep Learning
@@ -226,7 +222,7 @@ Output: "Ring stage — 94% confidence"
 
 ---
 
-## 📚 References
+##  References
 
 - [NIH Malaria Cell Images Dataset](https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria)
 - [BBBC041 Malaria Bounding Boxes](https://www.kaggle.com/datasets/kmader/malaria-bounding-boxes)
@@ -238,20 +234,3 @@ Output: "Ring stage — 94% confidence"
 
 > *"Just like how a doctor looks at a blood slide under a microscope and identifies which stage of malaria the patient has — this model does the same thing automatically using deep learning, in seconds, with high accuracy."*
 
-
-
-
-
-Blood smear image taken under microscope
-            ↓
-Image fed into CNN / EfficientNetB0
-            ↓
-Model looks at pixel patterns:
-  - Colour distribution (purple vs pink)
-  - Shape of cell (round vs irregular)
-  - Texture inside cell (smooth vs dotted)
-  - Size relative to other cells
-            ↓
-ResNet50 extracts 2048 features per cell
-            ↓
-PCA reduces to 128 most important features
