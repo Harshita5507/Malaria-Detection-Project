@@ -214,9 +214,8 @@ Output: "Ring stage — 94% confidence"
 
 ##  Project Info
 
-- **Type:** B.Tech Python Project
+
 - **Domain:** Medical Image Analysis / Deep Learning
-- **Platform:** Kaggle Notebooks (GPU P100)
 - **Language:** Python 3.10
 - **Framework:** TensorFlow 2.x + Scikit-learn
 
